@@ -6,19 +6,18 @@
     --science-blue: #0B5ED7;
     --silver: #C4C4C4;
     --wild-sand: #F5F5F5;
-
     /* Functional color variables */
     --color-primary: var(--wild-sand);
     --color-secondary: var(--mine-shaft);
     --color-tertiary: var(--silver);
-
     --button-bg-color: var(--science-blue);
-
     --is-ok-color: var(--japanese-laurel);
     --has-warning-color: var(--persimmon);
 }
 
+
 /* General Settings */
+
 body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -54,7 +53,9 @@ img {
     color: var(--has-warning-color);
 }
 
+
 /* Main Header */
+
 .main-header {
     align-items: center;
     background-color: var(--color-secondary);
@@ -84,13 +85,15 @@ img {
     list-style-type: none;
     padding-left: 0;
     width: 100%;
-
+}
 
 .main-nav-item {
     margin-right: 24px;
 }
 
+
 /* Sign In Page */
+
 .sign-in-page {
     align-items: center;
     display: flex;
@@ -151,14 +154,15 @@ img {
     width: 100%;
 }
 
+
 /* Home Page */
+
 .home-page-main {
     width: 80%;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .home-page-main-top-header {
     display: flex;
@@ -242,6 +246,7 @@ img {
 
 
 /* Sensor Detail Page */
+
 .sensor-details-main {
     margin-left: auto;
     margin-right: auto;
@@ -297,7 +302,9 @@ img {
     margin-bottom: 32px;
 }
 
+
 /* Add Sensor Page */
+
 .add-sensor-page-main {
     width: 80%;
     max-width: 1024px;
