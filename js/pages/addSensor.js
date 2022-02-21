@@ -6,16 +6,17 @@ const $lngInput = document.querySelector('.lng-input')
 
 const handleGeolocation = () => {
     const onSuccess = (position) => {
+        console.log(position)
         if (position && position.coords) {
             $latInput.value = position.coords.latitude
             $lngInput.value = position.coords.longitude
         }
     }
 
-    const onError = error => {}
+    const onError = (error) => console.log("oh no " + error);
 
     if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(onError, onSuccess)
+        navigator.geolocation.getCurrentPosition(onSuccess, onError)
     }
 }
 
@@ -24,7 +25,7 @@ const main = () => {
 
     $addSensorForm.addEventListener('submit', e => {
         e.preventDefault()
-        
+
         console.log("===")
     })
 }
